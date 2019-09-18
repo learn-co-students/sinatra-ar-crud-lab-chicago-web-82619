@@ -1,10 +1,10 @@
 <h1>Edit this Article:</h1>
 
-<form action="/articles/<%= @article.id %>" method="post">
+<form action="/articles/<%= @article.id %>" method="POST">
     <input type="hidden" name="_method" value="patch">
     <label for="title">Title:</label>
-    <input id="title" type="text" name="article[title]" value="<%= @article.title %>" ></br>
+    <input id="title" type="text" name="title" value="<%= @article.title %>" /></br>
     <label for="content">Content:</label>
-    <input id="content" type="text" name="article[content]" value="<%= @article.content %>"></br>
+    <input id="content" type="text" name="content" value="<%= @article.content %>"/></br>
     <button id="submit" type="submit">Update Article</button>
 </form>
